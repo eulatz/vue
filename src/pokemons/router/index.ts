@@ -8,6 +8,13 @@ export const pokemonRoute: RouteRecordRaw = {
   component: () => import('@/pokemons/layouts/PokemonLayout.vue'),
   children: [
     {
+      path: "list-native",
+      props: {title: 'Listado Nativo'},
+      name: 'pokemon-list-native',
+      component: () => import('@/pokemons/pages/PokemonListNative.vue'),
+    
+    },
+    {
       path: "list",
       props: {title: 'Listado'},
       name: 'pokemon-list',

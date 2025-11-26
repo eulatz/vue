@@ -1,6 +1,5 @@
 <script setup lang="ts">
     import PokeCardList from '../components/PokeCardList.vue';
-    import PokemonCard from '../components/PokemonCard.vue';
     import { usePokemon } from '../composables/usePokemons';
         const {count, pokemons, isLoading, isError, error} = usePokemon()
 </script>
